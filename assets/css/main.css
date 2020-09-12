@@ -1,0 +1,35 @@
+#teams{
+    width: 100%;
+    height:500px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+
+}
+.teams_cards{
+    display: flex;
+    /* background-color:white; */
+    gap:30px;
+}
+.team_card{
+    
+    width:300px;
+    display: flex;
+    height:450px;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    
+}
+.card__image{
+    border-radius:50%;
+}
+.teams_button_curve{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color: white;
+    color:black;
+    border:1px solid black;
+}
