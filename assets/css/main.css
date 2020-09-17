@@ -1,10 +1,12 @@
 #teams{
     width: 100%;
     height:500px;
-    display: flex;
+    display: grid;
     justify-content:center;
     align-items:center;
-    background-color:black;
+    /* background-color: linear-gradient(90deg,pink 50%,white 50%);
+     */
+     background: linear-gradient(180deg, purple, violet,pink 50%, white 50%);
 
 }
 .teams_cards{
