@@ -42,6 +42,13 @@
     color:purple;
     border: 3px solid purple;
 }
+.feature_image{
+    width:33%;
+}
+.main_picture{
+    /* width:75%; */
+    height:100vh;
+}
 @media (max-width: 567px) {
     #teams{
         justify-content:start;
