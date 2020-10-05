@@ -4,10 +4,8 @@
     display: grid;
     justify-content:center;
     align-items:center;
-    /* background-color: linear-gradient(90deg,pink 50%,white 50%);
-     */
-     background: linear-gradient(180deg, purple, violet,pink 50%, white 50%);
-     overflow: auto;
+    background: linear-gradient(180deg, purple, violet,pink 50%, white 50%);
+    overflow: auto;
 
 }
 .teams_cards{
