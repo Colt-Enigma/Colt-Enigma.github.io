@@ -24,21 +24,29 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        ::-webkit-scrollbar {
-          width: 7px;
-          height: 7px;
-        }        
-        ::-webkit-scrollbar-track {
-          box-shadow: inset 0 0 2px grey; 
-          border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-          background: #954cc9; 
-          border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-          background: #c63da4; 
-        }
+        .content, .outer-border { 
+                width: 240px; 
+                height: 150px; 
+                text-align:justify; 
+                background-color:green; 
+                color:white; 
+                padding-left:10px; 
+                padding-right:10px; 
+            } 
+            .outer-border { 
+                border: 2px solid black; 
+                position: relative; 
+                overflow: hidden; 
+            } 
+            .inner-border { 
+                position: absolute; 
+                left: 0; 
+                overflow-x: hidden; 
+                overflow-y: scroll; 
+            } 
+            .inner-border::-webkit-scrollbar { 
+                display: none; 
+            } 
     </style>
 
 </head>
@@ -309,7 +317,7 @@
                     </div>
                     <div class="col-xl-2 col-lg-3">
                         <div class="say-btn">
-                            <a href="" target="_blank" class="btn radius-btn">Download</a>
+                            <a href="https://sourceforge.net/projects/coltos/files/" target="_blank" class="btn radius-btn">Download</a>
                         </div>
                     </div>
                 </div>
@@ -328,7 +336,7 @@
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/RakeshBatra.png">
                             </div>
                             <h2>Rakesh Batra</h2>
                             <div class="teams_information">
@@ -341,7 +349,7 @@
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
                             </div>
                             <h2>Mrinal Gosh</h2>
                             <div class="teams_information">
@@ -354,9 +362,9 @@
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
                             </div>
-                            <h2>Mrinal Gosh</h2>
+                            <h2>Roger Truttmann</h2>
                             <div class="teams_information">
                                 SENIOR XDA MEMBER | ANDROID
                                 CUSTOM ROM DEVELOPER &
@@ -367,7 +375,7 @@
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
                             </div>
                             <h2>Mrinal Gosh</h2>
                             <div class="teams_information">
@@ -380,65 +388,196 @@
                 </div>
                 </h1>
         </section>
-        <section id="teams2">
+        <section id="teams2" style="margin-top: -14%;" >
             <div class="teams_div">
                 <div class="teams_cards">
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/SaurabhCharde.jpeg">
                             </div>
-                            <h2>Rakesh Batra</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
+                            <h3>Saurabh Charde</h3>
                         </center>
                     </div>
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/SonalSingh.jpeg">
                             </div>
-                            <h2>Mrinal Gosh</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
+                            <h3>Sonal Singh</h3>
                         </center>
                     </div>
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/Nitin1438.jpeg">
                             </div>
-                            <h2>Mrinal Gosh</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
+                            <h3>Nitin</h3>
                         </center>
                     </div>
                     <div class="team_card">
                         <center>
                             <div class="card_image">
-                                <img class="card__image" src="./avatar.jpg">
+                                <img class="card__image" src="assets/img/devs/wilmabumsson.jpeg">
                             </div>
-                            <h2>Mrinal Gosh</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
+                            <h3>Wilmabusson</h3>
                         </center>
                     </div>
                 </div>
                 </h1>
         </section>
-
+        <section id="teams2" style="margin-top: -14%;" >
+            <div class="teams_div">
+                <div class="teams_cards">
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/sai4041412.jpeg">
+                            </div>
+                            <h3>Sai4041412</h3
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
+                            </div>
+                            <h3>Samuel Souzaa</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/ShabQadri.jpeg">
+                            </div>
+                            <h3>Shab Qadri</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/mukesh22584.png">
+                            </div>
+                            <h3>Mukesh32584</h3>
+                        </center>
+                    </div>
+                </div>
+                </h1>
+        </section>
+        <section id="teams2" style="margin-top: -14%;" >
+            <div class="teams_div">
+                <div class="teams_cards">
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/ziasam.jpeg">
+                            </div>
+                            <h3>Ziasam</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/Gigabyte.jpeg">
+                            </div>
+                            <h3>Gigabyte-1000</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/Markdarkness.jpeg">
+                            </div>
+                            <h3>Markdarkness</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/curse.png">
+                            </div>
+                            <h3>Anulalat</h3>
+                        </center>
+                    </div>
+                </div>
+                </h1>
+        </section>
+        <section id="teams2" style="margin-top: -14%;" >
+            <div class="teams_div">
+                <div class="teams_cards">
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/SiddharthBharadwaj.jpeg">
+                            </div>
+                            <h3>Siddharth Bharadwaj</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/Joker-commits.jpeg">
+                            </div>
+                            <h3>Joker-Commits</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/chiru2000.jpeg">
+                            </div>
+                            <h3>Chiranth</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
+                            </div>
+                            <h3>TheAcanthite</h3>
+                        </center>
+                    </div>
+                </div>
+                </h1>
+        </section>
+        <section id="teams2" style="margin-top: -14%; margin-bottom: -15%;" >
+            <div class="teams_div">
+                <div class="teams_cards">
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/sashascurtu.jpeg">
+                            </div>
+                            <h3>Alexandru Scurtu</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/sagarrokade006.jpeg">
+                            </div>
+                            <h3>Sagar Rokade</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/Ayush12ka.jpeg">
+                            </div>
+                            <h3>Ayush kakkar</h3>
+                        </center>
+                    </div>
+                    <div class="team_card">
+                        <center>
+                            <div class="card_image">
+                                <img class="card__image" src="assets/img/devs/Hazama25.png">
+                            </div>
+                            <h4>ジョーゴールドバーグ</h4>
+                        </center>
+                    </div>
+                </div>
+                </h1>
+        </section>
         <footer>
 
             <!-- Footer Start-->
@@ -459,6 +598,8 @@
                                             <p class="info1">Colt Project is focused on android custom rom, custom
                                                 kernel
                                                 and app development. We are TeamColt.</p>
+                                                <br>
+                                            <p>Website Designed by : <br> <b><a href="https://github.com/ArunTeltia" target="_blank" style="color: #121212;" >Arun Teltia </b></a> & <b><a href="https://github.com/nparashar150" target="_blank" style="color: #121212;">Naman Parashar</b></a>.</p>
                                         </div>
                                     </div>
                                 </div>

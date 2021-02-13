@@ -10,7 +10,7 @@
 }
 #teams2{
     width: 100%;
-    height:500px;
+    height:480px;
     display: grid;
     justify-content:center;
     align-items:center;
@@ -29,8 +29,8 @@
 }
 .team_card{
     display: flex;
-    width:270px;
-    height:420px;
+    width:250px;
+    height:280px;
     align-items: center;
     justify-content: center;
     background-color:rgb(250, 250, 250);
@@ -38,6 +38,8 @@
 }
 .card__image{
     border-radius:50%;
+    width: 100px;
+    height: 100px;
 }
 .teams_button_curve{
     width:60px;
@@ -62,14 +64,26 @@
     body {
         overflow-y: hidden;
     }
-    #teams, #teams2{
+    #teams {
         justify-content:start;
         background: linear-gradient(180deg, purple, violet,pink 50%, white 50%);
         overflow-x: scroll;
     }
+    #teams2 {
+        justify-content:start;
+        overflow-x: scroll;
+    }
+    .teams_cards {
+    }
     .teams_cards{
         margin-left:30px;
         padding-bottom: 0;
+    }
+    .single-cases-img {
+        width: 90%;
+        justify-content: center;
+        padding-left: 15%;
+        height: auto;
     }
 }
 /*.dark-mode-button {
