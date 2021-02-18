@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -44,9 +45,21 @@
                 overflow-x: hidden; 
                 overflow-y: scroll; 
             } 
-            .inner-border::-webkit-scrollbar { 
-                display: none; 
-            } 
+            ::-webkit-scrollbar {
+              width: 7px;
+              height: 7px;
+            }        
+            ::-webkit-scrollbar-track {
+              box-shadow: inset 0 0 2px grey; 
+              border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+              background: #7b3dc6; 
+              border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+              background: #bf3dc6; 
+            }
     </style>
 
 </head>
@@ -330,253 +343,142 @@
         <center>
             <h1>Meet the Team</h1>
         </center>
-        <section id="teams">
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/RakeshBatra.png">
-                            </div>
-                            <h2>Rakesh Batra</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
-                        </center>
+        <section id="section4">
+            <div style="overflow: hidden;" >
+                <div class="row">
+                    <div class="column">
+                      <a href="#"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/RakeshBatra.png" class="user-dev" alt=""></a>
+                      <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Founder</a></p>
+                      <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Rakesh Batra</a></p>
                     </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
-                            </div>
-                            <h2>Mrinal Gosh</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
-                        </center>
+                    <div class="column">
+                      <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/mrinalghosh.png" class="user-dev" alt=""></a>
+                      <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                      <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Mrinal Gosh</a></p>
                     </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
-                            </div>
-                            <h2>Roger Truttmann</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
-                        </center>
+                    <div class="column">
+                      <a href="https://github.com/ziasam"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/mrinalghosh.png " class="user-dev" alt=""></a>
+                      <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="https://github.com/ziasam">Maintainer</a></p>
+                      <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="https://github.com/ziasam">Roger Truttmann</a></p>
                     </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
-                            </div>
-                            <h2>Mrinal Gosh</h2>
-                            <div class="teams_information">
-                                SENIOR XDA MEMBER | ANDROID
-                                CUSTOM ROM DEVELOPER &
-                                MAINTAINER
-                            </div>
-                        </center>
-                    </div>
+                    <div class="column">
+                        <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/Nitin1438.jpeg" class="user-dev" alt=""></a>
+                        <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                        <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Nitin</a></p>
+                      </div>
+                </div>   
+                <div class="row">
+                  <div class="column">
+                    <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/SaurabhCharde.jpeg" class="user-dev" alt=""></a>
+                    <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                    <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Saurabh Charde</a></p>
+                  </div>
+                  <div class="column">
+                    <a href="#"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/SonalSingh.jpeg" class="user-dev" alt=""></a>
+                    <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Maintainer</a></p>
+                    <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Sonal Singh</a></p>
+                  </div>
+                  <div class="column">
+                    <a href="https://github.com/nparashar150"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/nparashar150.jpeg" class="user-dev" alt=""></a>
+                    <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="https://github.com/nparashar150">Maintainer</a></p>
+                    <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="https://github.com/nparashar150">Naman Parashar</a></p>
+                  </div>
+
+                  <div class="column">
+                    <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/wilmabumsson.jpeg" class="user-dev" alt=""></a>
+                    <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                    <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Wilmabusson</a></p>
+                  </div>
+              </div> 
+              <div class="row">
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/sai4041412.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Sai4041412</a></p>
                 </div>
-                </h1>
-        </section>
-        <section id="teams2" style="margin-top: -14%;" >
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/SaurabhCharde.jpeg">
-                            </div>
-                            <h3>Saurabh Charde</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/SonalSingh.jpeg">
-                            </div>
-                            <h3>Sonal Singh</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Nitin1438.jpeg">
-                            </div>
-                            <h3>Nitin</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/wilmabumsson.jpeg">
-                            </div>
-                            <h3>Wilmabusson</h3>
-                        </center>
-                    </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/mrinalghosh.png" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Samuel Souzaa</a></p>
                 </div>
-                </h1>
-        </section>
-        <section id="teams2" style="margin-top: -14%;" >
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/sai4041412.jpeg">
-                            </div>
-                            <h3>Sai4041412</h3
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
-                            </div>
-                            <h3>Samuel Souzaa</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/ShabQadri.jpeg">
-                            </div>
-                            <h3>Shab Qadri</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mukesh22584.png">
-                            </div>
-                            <h3>Mukesh32584</h3>
-                        </center>
-                    </div>
+                <div class="column">
+                  <a href="#"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/ShabQadri.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Shab Qadri</a></p>
                 </div>
-                </h1>
-        </section>
-        <section id="teams2" style="margin-top: -14%;" >
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/ziasam.jpeg">
-                            </div>
-                            <h3>Ziasam</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Gigabyte.jpeg">
-                            </div>
-                            <h3>Gigabyte-1000</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Markdarkness.jpeg">
-                            </div>
-                            <h3>Markdarkness</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/curse.png">
-                            </div>
-                            <h3>Anulalat</h3>
-                        </center>
-                    </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/mukesh22584.png" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Mukesp2584</a></p>
                 </div>
-                </h1>
-        </section>
-        <section id="teams2" style="margin-top: -14%;" >
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/SiddharthBharadwaj.jpeg">
-                            </div>
-                            <h3>Siddharth Bharadwaj</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Joker-commits.jpeg">
-                            </div>
-                            <h3>Joker-Commits</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/chiru2000.jpeg">
-                            </div>
-                            <h3>Chiranth</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/mrinalghosh.png">
-                            </div>
-                            <h3>TheAcanthite</h3>
-                        </center>
-                    </div>
+            </div> 
+            <div class="row">
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/ziasam.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Ziasam</a></p>
                 </div>
-                </h1>
-        </section>
-        <section id="teams2" style="margin-top: -14%; margin-bottom: -15%;" >
-            <div class="teams_div">
-                <div class="teams_cards">
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/sashascurtu.jpeg">
-                            </div>
-                            <h3>Alexandru Scurtu</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/sagarrokade006.jpeg">
-                            </div>
-                            <h3>Sagar Rokade</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Ayush12ka.jpeg">
-                            </div>
-                            <h3>Ayush kakkar</h3>
-                        </center>
-                    </div>
-                    <div class="team_card">
-                        <center>
-                            <div class="card_image">
-                                <img class="card__image" src="assets/img/devs/Hazama25.png">
-                            </div>
-                            <h4>ジョーゴールドバーグ</h4>
-                        </center>
-                    </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/Gigabyte.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Gigabyte-1000</a></p>
                 </div>
-                </h1>
+                <div class="column">
+                  <a href="#"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/Markdarkness.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Markdarkness</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/curse.png" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Anulalat</a></p>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/SiddharthBharadwaj.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Siddharth</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/Joker-commits.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Joker-Commits</a></p>
+                </div>
+                <div class="column">
+                  <a href="#"><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/chiru2000.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="#">Chiranth</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/mrinalghosh.png" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">TheAcanthite</a></p>
+                </div>
+            </div> 
+            <div class="row" style="padding-bottom: 20px;" >
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/sashascurtu.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Alexandru Scurtu</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/sagarrokade006.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"><a href="">Sagar Rokade</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs/Ayush12ka.jpeg" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Ayush kakkar</a></p>
+                </div>
+                <div class="column">
+                  <a href=""><img data-aos="zoom-in-up" data-aos-duration="1300" src="assets/img/devs//Hazama25.png" class="user-dev" alt=""></a>
+                  <p data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">Maintainer</a></p>
+                  <p style="margin-top: -10px;" data-aos="zoom-in-up" data-aos-duration="1300"> <a href="">ジョーゴールドバーグ</a></p>
+                </div>
+            </div>                
+            </div>
         </section>
         <footer>
 
@@ -753,6 +655,10 @@
             }
 	// ]]>
         </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script> 
 </body>
 
 </html>
