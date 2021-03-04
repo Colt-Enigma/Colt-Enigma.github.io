@@ -36,15 +36,7 @@ body {
     color: var(--font-color);
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    .header-sticky {
-        background-color: #fff;
-        color: var(--font-color);
-    }
-}
-
 .header-sticky {
-    background-color: var(--bg-color);
     color: var(--font-color);
 }
 
