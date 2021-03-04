@@ -23,6 +23,7 @@
     --link-color: #e1e1ff;
     --border-dark: #eeacf5;
     --border-dark2: #f5acac;
+    --background-color: #1f1625;
     --font-color-h4: #e1e1ff;
 }
 
@@ -33,6 +34,13 @@
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .header-sticky {
+        background-color: #fff;
+        color: var(--font-color);
+    }
 }
 
 .header-sticky {
