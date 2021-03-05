@@ -75,6 +75,9 @@
     body {
         overflow-y: hidden;
     }
+    .feature_image {
+        display: none;
+    }
     #teams {
         justify-content: start;
         background: linear-gradient(180deg, purple, violet, pink 50%, white 50%);
