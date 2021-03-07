@@ -2,7 +2,8 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
     color: rgba(66, 139, 202, 1);
 }
 
@@ -66,7 +67,9 @@ code {
     border-color: rgba(92, 184, 92, 0.4);
 }
 
-.latest-release h3, .latest-release h3 .glyphicon, .latest-release h3 a {
+.latest-release h3,
+.latest-release h3 .glyphicon,
+.latest-release h3 a {
     color: rgba(92, 184, 92, 1);
 }
 
@@ -83,7 +86,9 @@ code {
     border-color: rgba(240, 173, 78, 0.4);
 }
 
-.pre-release h3, .pre-release h3 .glyphicon, .pre-release h3 a {
+.pre-release h3,
+.pre-release h3 .glyphicon,
+.pre-release h3 a {
     color: rgba(240, 173, 78, 1);
 }
 
@@ -107,13 +112,13 @@ code {
     text-align: center;
 }
 
-#title > h1 {
+#title>h1 {
     display: inline;
     margin-right: 10px;
     font-weight: bold;
 }
 
-#title > span {
+#title>span {
     font-size: 24px;
 }
 
@@ -121,13 +126,16 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin-bottom: 40px;
 }
-#downloadButton{
+
+#downloadButton {
     margin-right: 20px;
     margin-top: 5px;
 }
-.jumbotron{
+
+.jumbotron {
     background: transparent;
 }

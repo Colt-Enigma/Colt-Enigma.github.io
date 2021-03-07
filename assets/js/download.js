@@ -4,9 +4,9 @@ var apiRoot = "https://api.github.com/";
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split("&");
-    for(var i = 0; i < vars.length; i++) {
+    for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split("=");
-        if(pair[0] == variable) {
+        if (pair[0] == variable) {
             return pair[1];
         }
     }
@@ -23,24 +23,24 @@ function showStats(data) {
     var err = false;
     var errMessage = '';
 
-    if(data.status == 404) {
+    if (data.status == 404) {
         err = true;
         errMessage = "The project does not exist!";
     }
 
-    if(data.status == 403) {
+    if (data.status == 403) {
         err = true;
         errMessage = "You've exceeded GitHub's rate limiting.<br />Please try again in about an hour.";
     }
 
-    if(data.length == 0) {
+    if (data.length == 0) {
         err = true;
         errMessage = "There are no releases for this project";
     }
 
     var html = "";
 
-    if(err) {
+    if (err) {
         html += "<div class='col-md-6 col-md-offset-3 alert alert-danger output'>" + errMessage + "</div>";
     } else {
         html += "<div class='col-md-6 col-md-offset-3 output'>";
@@ -62,17 +62,17 @@ function showStats(data) {
 
             $('#downloadTitle').html(name);
 
-            if(isPreRelease) {
+            if (isPreRelease) {
                 releaseBadge = "&nbsp;&nbsp;<span class='badge'>Pre-release</span>";
                 releaseClassNames += " pre-release";
-            } else if(isLatestRelease) {
+            } else if (isLatestRelease) {
                 releaseBadge = "&nbsp;&nbsp;<span class='badge'>Latest release</span>";
                 releaseClassNames += " latest-release";
                 isLatestRelease = false;
             }
 
             var downloadInfoHTML = "";
-            if(releaseAssets.length) {
+            if (releaseAssets.length) {
                 downloadInfoHTML += "<h4><span class='glyphicon glyphicon-download'></span>&nbsp;&nbsp;" +
                     "Download Info</h4>";
 
@@ -110,27 +110,27 @@ function showStats(data) {
             html += "<li><span class='glyphicon glyphicon-calendar'></span>&nbsp;&nbsp;" +
                 "Published: " + publishDate + "</li>";
 
-            if(releaseDownloadCount) {
+            if (releaseDownloadCount) {
                 html += "<li><span class='glyphicon glyphicon-download'></span>&nbsp;&nbsp;" +
-                    "Downloads: " + formatNumber(releaseDownloadCount) + "</li>";              
+                    "Downloads: " + formatNumber(releaseDownloadCount) + "</li>";
             }
 
             html += "</ul>";
 
             html += downloadInfoHTML;
 
-            if(downloadUrl){
-                var downloadButtonHTML ='<div class="row" align="right" id="downloadButton">'; 
+            if (downloadUrl) {
+                var downloadButtonHTML = '<div class="row" align="right" id="downloadButton">';
                 downloadButtonHTML += '<a type="button" class="btn btn-raised btn-info" href="';
                 downloadButtonHTML += downloadUrl;
                 downloadButtonHTML += '">Download</a></div>';
             }
-            html+=downloadButtonHTML;
+            html += downloadButtonHTML;
 
             html += "</div>";
         });
 
-        if(totalDownloadCount) {
+        if (totalDownloadCount) {
             var totalHTML = "<div class='row total-downloads'>";
             totalHTML += "<h1><span class='glyphicon glyphicon-download'></span>&nbsp;&nbsp;Total Downloads</h1>";
             totalHTML += "<span>" + formatNumber(totalDownloadCount) + "</span>";
@@ -151,9 +151,9 @@ function showStats(data) {
 
 // Callback function for getting release stats
 function getStats() {
-    var url = ""+window.location; 
+    var url = "" + window.location;
     var queryStart = url.indexOf("=") + 1,
-        queryEnd   = url.length + 1,
+        queryEnd = url.length + 1,
         query = url.slice(queryStart, queryEnd - 1);
 
     var user = "EquinoxKernel";
