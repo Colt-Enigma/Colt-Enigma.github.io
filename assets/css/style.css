@@ -7044,3 +7044,12 @@ z .slider-area .hero-cap h2 {
         font-size: 16px !important;
     }
 }
+
+@media only screen and (min-width: 200px) and (max-width: 310px) {
+    .meet-the-team {
+        font-size: 30px !important;
+    }
+    .column>p>a {
+        font-size: 13px !important;
+    }
+}
