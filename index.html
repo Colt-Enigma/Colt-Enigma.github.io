@@ -612,8 +612,16 @@
                 if (e.target.checked) {
                     document.documentElement.setAttribute('data-theme', 'dark');
                     localStorage.setItem('theme', 'dark');
-                    $(".header-sticky").css("background-color", "#1f1625");
-                    $(".preloader").css("background-color", "#1f1625");
+                    $(document).ready(function() {
+                        $("#preloader-active,.preloader-inner,.header-sticky,.preloader,.preloader-circle").css("background-color", "#1f1625");
+                    });
+                    $(document).ready(function() {
+                        $(".slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("background-color", "#1f1625");
+                        $(".slicknav_nav a,.slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("color", "#e1e1ff");
+                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#9c66bb");
+                    });
+                    /*$(".header-sticky").css("background-color", "#1f1625");
+                    $(".preloader").css("background-color", "#1f1625");*/
                     document.getElementById('np150').src = 'assets/img/devs/nparashar150-dark.jpeg';
                     document.getElementById('TheAcanthite').src = 'assets/img/devs/mrinalghosh-dark.png'
                     document.getElementById('Roger').src = 'assets/img/devs/mrinalghosh-dark.png'
@@ -621,9 +629,16 @@
                 } else {
                     document.documentElement.setAttribute('data-theme', 'light');
                     localStorage.setItem('theme', 'light');
-                    /*document.getElementsById('header-sticky').style.backgroundColor = "white";*/
-                    $(".header-sticky").css("background-color", "#fff");
-                    $(".preloader").css("background-color", "#fff");
+                    $(document).ready(function() {
+                        $("#preloader-active,.preloader-inner,.header-sticky,.preloader,.preloader-circle").css("background-color", "#fff");
+                    });
+                    $(document).ready(function() {
+                        $(".slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("background-color", "#fff");
+                        $(".slicknav_nav a,.slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("color", "#000");
+                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#f9218d");
+                    });
+                    /*$(".header-sticky").css("background-color", "#fff");
+                    $(".preloader").css("background-color", "#fff");*/
                     document.getElementById('np150').src = 'assets/img/devs/nparashar150-light.jpeg';
                     document.getElementById('TheAcanthite').src = 'assets/img/devs/mrinalghosh.png'
                     document.getElementById('Roger').src = 'assets/img/devs/mrinalghosh.png'
