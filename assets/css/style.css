@@ -5420,7 +5420,7 @@ del {
     bottom: 11px;
 }
 
-.slicknav_menu .slicknav_icon-bar {
+.slicknav_menu {
     background-color: var(--bg-color) !important;
 }
 
@@ -6651,6 +6651,18 @@ z .slider-area .hero-cap h2 {
     .testimonial-area .testimonial-main .testimonial-caption .testimonial-top-cap p {
         margin-bottom: 30px;
     }
+    .feature_image {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .feature_image {
+        display: none;
+    }
+    .main_picture {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -6946,5 +6958,98 @@ z .slider-area .hero-cap h2 {
     }
     100% {
         border: 3px solid rgb(155, 10, 169);
+    }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2160px) {
+    .main_picture {
+        height: 65vh !important;
+        margin-right: 1vw;
+    }
+    .hero__img {
+        margin-top: 7vw;
+        margin-right: -5vw;
+    }
+    .div_section4 {
+        width: 69% !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .main_picture {
+        height: 85vh !important;
+        margin-right: 1vw;
+    }
+    .hero__img {
+        margin-top: 6vw;
+        margin-right: -7vw;
+    }
+    .div_section4 {
+        padding: 0;
+        width: 98% !important;
+    }
+    .column {
+        padding: 0;
+    }
+    img.say-shape2.d-none.d-lg-block {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1700px) {
+    .main_picture {
+        height: 80vh !important;
+        margin-right: 1vw;
+    }
+    .hero__img {
+        margin-top: 4vw;
+        margin-right: -4vw;
+    }
+    .div_section4 {
+        width: 80% !important;
+    }
+    .column>p>a {
+        font-size: 16px !important;
+    }
+    .column>p>a:hover {
+        font-size: 17px !important;
+    }
+}
+
+@media only screen and (min-width: 1750px) and (max-width: 2160px) {
+    .main_picture {
+        height: 65vh !important;
+        margin-right: 1vw;
+    }
+    .hero__img {
+        margin-top: 4vw;
+        margin-right: -4vw;
+    }
+    .div_section4 {
+        width: 60% !important;
+    }
+    .column>p>a {
+        font-size: 16px !important;
+    }
+    .column>p>a:hover {
+        font-size: 17px !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .meet-the-team {
+        font-size: 30px !important;
+    }
+    .column>p>a {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 310px) {
+    .meet-the-team {
+        font-size: 30px !important;
+    }
+    .column>p>a {
+        font-size: 13px !important;
     }
 }

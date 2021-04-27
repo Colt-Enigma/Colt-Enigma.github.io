@@ -131,3 +131,15 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.slicknav_btn,
+.slicknav_collapsed {
+    padding-right: 10px;
+    padding-left: 8px;
+    padding-bottom: 12px;
+    background-color: #9c66bb;
+}
+
+.slicknav_icon-bar {
+    background-color: var(--font-color)!important;
+}
