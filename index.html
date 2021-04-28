@@ -62,12 +62,12 @@
         }
         
          ::-webkit-scrollbar-thumb {
-            background: #7b3dc6;
+            background: #48c486;
             border-radius: 10px;
         }
         
          ::-webkit-scrollbar-thumb:hover {
-            background: #bf3dc6;
+            background: #35a76e;
         }
     </style>
 
@@ -98,7 +98,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="./hero--.png" alt="">
+                                    <img class="img-logo-top" src="./hero--.png" alt="">
                                 </a> <span> Project</span>
                                 <div class="theme-switch-wrapper">
                                     <label class="theme-switch" for="checkbox">
@@ -193,7 +193,7 @@
         <section class="best-features-area section-padd4" id="id_features">
             <div class="container">
                 <div>
-                    <img class="feature_image" src="./coltbackground.png" alt="">
+                    <img id="feature-image" class="feature_image" src="./Avatar_15.png" alt="">
                 </div>
                 <div class="row justify-content-end">
                     <div class="col-xl-8 col-lg-10">
@@ -369,7 +369,7 @@
                 </div>
             </div>
             <div class="say-shape">
-                <img src="assets/img/shape/say-shape-left-1.png" alt="" class="say-shape1 rotateme d-none d-xl-block">
+                <img src="assets/img/shape/say-shape-left-1-green.png" alt="" class="say-shape1 rotateme d-none d-xl-block">
                 <img src="assets/img/shape/say-shape-right.png" alt="" class="say-shape2 d-none d-lg-block">
             </div>
         </div>
@@ -613,12 +613,12 @@
                     document.documentElement.setAttribute('data-theme', 'dark');
                     localStorage.setItem('theme', 'dark');
                     $(document).ready(function() {
-                        $("#preloader-active,.preloader-inner,.header-sticky,.preloader,.preloader-circle").css("background-color", "#1f1625");
+                        $("#preloader-active,.preloader-inner,.header-sticky,.preloader,.preloader-circle").css("background-color", "#000");
                     });
                     $(document).ready(function() {
-                        $(".slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("background-color", "#1f1625");
-                        $(".slicknav_nav a,.slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("color", "#e1e1ff");
-                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#9c66bb");
+                        $(".slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("background-color", "#000");
+                        $(".slicknav_nav a,.slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("color", "#e1ffe8");
+                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#000");
                     });
                     /*$(".header-sticky").css("background-color", "#1f1625");
                     $(".preloader").css("background-color", "#1f1625");*/
@@ -626,7 +626,8 @@
                     document.getElementById('TheAcanthite').src = 'assets/img/devs/mrinalghosh-dark.png'
                     document.getElementById('Roger').src = 'assets/img/devs/mrinalghosh-dark.png'
                     document.getElementById('Samuel').src = 'assets/img/devs/mrinalghosh-dark.png'
-                    document.getElementById('main_logo').src = 'Avatar_15_Dark.png'
+                    document.getElementById('main_logo').src = 'Avatar_15_dark.png'
+                    document.getElementById('feature-image').src = 'Avatar_15_dark.png'
                 } else {
                     document.documentElement.setAttribute('data-theme', 'light');
                     localStorage.setItem('theme', 'light');
@@ -636,7 +637,7 @@
                     $(document).ready(function() {
                         $(".slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("background-color", "#fff");
                         $(".slicknav_nav a,.slicknav_btn,.slicknav_nav,.mobile_menu,.main-menu").css("color", "#000");
-                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#f9218d");
+                        $(".slicknav_btn,.slicknav_collapsed").css("background-color", "#48bb82");
                     });
                     /*$(".header-sticky").css("background-color", "#fff");
                     $(".preloader").css("background-color", "#fff");*/
@@ -645,6 +646,7 @@
                     document.getElementById('Roger').src = 'assets/img/devs/mrinalghosh.png'
                     document.getElementById('Samuel').src = 'assets/img/devs/mrinalghosh.png'
                     document.getElementById('main_logo').src = 'Avatar_15.png'
+                    document.getElementById('feature-image').src = 'Avatar_15.png'
                 }
             }
 
