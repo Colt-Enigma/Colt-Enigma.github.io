@@ -1,5 +1,5 @@
 .dark-mode-button {
-    background-color: rgb(198, 32, 213);
+    background-color: #368d61;
     border: 0px;
     border-radius: 5px;
     font-family: "Nunito", sans-serif;
@@ -15,16 +15,16 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #9a97f3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #1f1625;
-    --heading-color: #818cab;
-    --link-color: #e1e1ff;
-    --border-dark: #eeacf5;
+    --primary-color: #73c99e;
+    --secondary-color: #368d61;
+    --font-color: #e1ffe8;
+    --bg-color: #000000;
+    --heading-color: #81ab93;
+    --link-color: #e1ffe8;
+    --border-dark: #b0f5ac;
     --border-dark2: #f5acac;
-    --background-color: #1f1625;
-    --font-color-h4: #e1e1ff;
+    --background-color: #000000;
+    --font-color-h4: #e1ffe8;
 }
 
 [data-theme="light"] {
@@ -75,6 +75,7 @@ nav {
 
 .theme-switch-wrapper {
     display: flex;
+    padding-top: 0.5vw;
     align-items: center;
 }
 
@@ -117,7 +118,7 @@ nav {
 }
 
 input:checked+.slider {
-    background-color: #9c66bb;
+    background-color: #368d61;
 }
 
 input:checked+.slider:before {
@@ -137,7 +138,7 @@ input:checked+.slider:before {
     padding-right: 10px;
     padding-left: 8px;
     padding-bottom: 12px;
-    background-color: #9c66bb;
+    background-color: #368d61;
 }
 
 .slicknav_icon-bar {
